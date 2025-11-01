@@ -1,0 +1,14 @@
+{
+	"Nano-Shield": {
+		"Name": "Nanoshield",
+		"Attack": 0,
+		"Defense": 4,
+		"DragonParts": []
+	},
+	"Nanobyte Swarm": {
+		"Name": "Nanoshield",
+		"Attack": 1,
+		"Defense": 1,
+		"DragonParts": []
+	}
+}

@@ -1,0 +1,368 @@
+[
+  {
+    "Name": "Polar field",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Magnetic",
+    "EquippedAttack": 1,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "LeftAlly",
+        "Effect": {
+          "Type": "BuffAttack",
+          "Magnitude": 2
+        },
+        "Trigger": "BattleEnd"
+      },
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "RightAlly",
+        "Effect": {
+          "Type": "BuffHealth",
+          "Magnitude": 4
+        },
+        "Trigger": "BattleEnd"
+      }
+    ]
+  },
+  {
+    "Name": "Resonant Servo",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Magnetic",
+    "EquippedAttack": 3,
+    "EquippedHP": 4,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 2
+        },
+        "Trigger": "AllyBuffed"
+      }
+    ]
+  },
+  {
+    "Name": "Disposable boiler",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Steampunk",
+    "EquippedAttack": 2,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Hand",
+        "Effect": {
+          "Type": "GenerateSteamCharge",
+          "Magnitude": 1
+        },
+        "Trigger": "Sold"
+      }
+    ]
+  },
+  {
+    "Name": "Steam recombinator",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Steampunk",
+    "EquippedAttack": 4,
+    "EquippedHP": 4,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "ApplySteamCharge",
+          "Magnitude": 1
+        },
+        "Trigger": "SteamChargeUsedOnAlly"
+      }
+    ]
+  },
+  {
+    "Name": "Battle infuser",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Steampunk",
+    "EquippedAttack": 2,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "ApplySteamCharge",
+          "Magnitude": 1
+        },
+        "Trigger": "Attacking"
+      }
+    ]
+  },
+  {
+    "Name": "Flame tongue",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Elemental",
+    "EquippedAttack": 1,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAttack",
+          "Magnitude": 2
+        },
+        "Trigger": "Attacking"
+      }
+    ]
+  },
+  {
+    "Name": "Liquid nitrogen spit",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Elemental",
+    "EquippedAttack": 2,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Target",
+        "Effect": {
+          "Type": "DisablePart",
+          "Magnitude": 2
+        },
+        "Trigger": "Attacking"
+      }
+    ]
+  },
+  {
+    "Name": "Nanobyte lure",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Nanotech",
+    "EquippedAttack": 1,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SummonGameEffect",
+        "UnitToSummon": "Nanobyte Swarm",
+        "Target": "RandomAllyTile",
+        "SummonCount": 1,
+        "Trigger": "Equipped"
+      }
+    ]
+  },
+  {
+    "Name": "Nanoshield generator",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Nanotech",
+    "EquippedAttack": 2,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SummonGameEffect",
+        "UnitToSummon": "Shield",
+        "Target": "RandomAllyFrontTile",
+        "SummonCount": 1,
+        "Trigger": "KnockedDown"
+      }
+    ]
+  },
+  {
+    "Name": "Symbiant amplifier",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Nanotech",
+    "EquippedAttack": 1,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 1
+        },
+        "Trigger": "TeamEquipsNanopart"
+      }
+    ]
+  },
+  {
+    "Name": "Jank Collector",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Pirated",
+    "EquippedAttack": 1,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "Consume",
+          "Magnitude": 1
+        },
+        "Trigger": "ExitStore"
+      }
+    ]
+  },
+  {
+    "Name": "Jank distributor",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Pirated",
+    "EquippedAttack": 3,
+    "EquippedHP": 2,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "RandomAlly",
+        "Effect": {
+          "Type": "Consume",
+          "Magnitude": 1
+        },
+        "Trigger": "ExitStore"
+      }
+    ]
+  },
+  {
+    "Name": "Claw of temptation",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Eldritch",
+    "EquippedAttack": 3,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "GainGold",
+          "Magnitude": 1
+        },
+        "Trigger": "EnterStore"
+      }
+    ]
+  },
+  {
+    "Name": "Amplification horns",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Eldritch",
+    "EquippedAttack": 2,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 1
+        },
+        "Trigger": "SelfBuffed"
+      }
+    ]
+  },
+  {
+    "Name": "Warp tendrils",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Eldritch",
+    "EquippedAttack": 2,
+    "EquippedHP": 2,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 2
+        },
+        "Trigger": "AllyKnockedDown"
+      }
+    ]
+  },
+  {
+    "Name": "Fuel injector",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Plasma",
+    "EquippedAttack": 2,
+    "EquippedHP": 2,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "RandomAlly",
+        "Effect": {
+          "Type": "BuffAttack",
+          "Magnitude": 1
+        },
+        "Trigger": "ExitStore"
+      }
+    ]
+  },
+  {
+    "Name": "Minor coils",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Plasma",
+    "EquippedAttack": 1,
+    "EquippedHP": 2,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "ApplyShield",
+          "Magnitude": 1
+        },
+        "Trigger": "BattleStart"
+      }
+    ]
+  },
+  {
+    "Name": "Adaptive plating",
+    "Tier": 1,
+    "Level": 1,
+    "Family": "Biomech",
+    "EquippedAttack": 1,
+    "EquippedHP": 1,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "Self",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 1
+        },
+        "Trigger": "KnockedDown"
+      }
+    ]
+  },
+  {
+    "Name": "Impulse reversion",
+    "Tier": 2,
+    "Level": 1,
+    "Family": "Biomech",
+    "EquippedAttack": 3,
+    "EquippedHP": 3,
+    "Effects": [
+      {
+        "TypeName": "SingleTargetGameEffect",
+        "Target": "TriggeringUnit",
+        "Effect": {
+          "Type": "BuffAll",
+          "Magnitude": 4
+        },
+        "Trigger": "AllyDebuffed"
+      }
+    ]
+  }
+]

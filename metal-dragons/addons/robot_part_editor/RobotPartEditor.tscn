@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpbiftl2v1v8h"]
+
+[ext_resource type="Script" uid="uid://babbmgub2wrqd" path="res://addons/robot_part_editor/RobotPartEditor.cs" id="1_uas84"]
+
+[node name="RobotPartEditor" type="HBoxContainer" node_paths=PackedStringArray("_partListContainer", "_inspectorContainer", "_buttonContainer", "_inspector", "_saveButton", "_deleteButton", "_deleteDialog")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uas84")
+_partListContainer = NodePath("@ScrollContainer@21255/@VBoxContainer@21254")
+_inspectorContainer = NodePath("@VBoxContainer@21256")
+_buttonContainer = NodePath("@VBoxContainer@21253")
+_inspector = NodePath("@VBoxContainer@21256/@VBoxContainer@21257")
+_saveButton = NodePath("@VBoxContainer@21253/@Button@21251")
+_deleteButton = NodePath("@VBoxContainer@21253/@Button@21252")
+_deleteDialog = NodePath("@ConfirmationDialog@21382")
+
+[node name="PartList" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Inspector" type="VBoxContainer" parent="."]
+layout_mode = 2
